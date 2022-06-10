@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 
 public class MyGame{  
 
-    public static void main(String[] args)        throws IOException    {
+    public static void main(String[] args)        throws  IOException    {
 
         /*int[][] hi = {{0,0,0,0,0,0,0,0,0,0},
                       {0,0,0,0,0,0,0,0,0,0},
