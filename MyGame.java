@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 
 public class MyGame{  
 
-    public static void main(String[] args)        throws  IOException    {
+    public static void main(String[] args){
 
         /*int[][] hi = {{0,0,0,0,0,0,0,0,0,0},
                       {0,0,0,0,0,0,0,0,0,0},
@@ -329,18 +329,18 @@ class hi{
         }
     }
 
-    void coordinateIn()        throws IOException
+    void coordinateIn()
     {
         Expandfunc bob = new Expandfunc(board);
         System.out.println("You are playing Minesweeper");
         boolean gameOverWin =false;
         boolean gameOverLose =false;
-        //Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        //BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while(!gameOverWin || !gameOverLose){
             
-            /*System.out.print("Enter the x coordinate of the point you want to open");
+            System.out.print("Enter the x coordinate of the point you want to open");
             int x , y;
             
             x = Integer.parseInt(sc.nextLine());
@@ -350,13 +350,13 @@ class hi{
             System.out.print("Enter the y coordinate of the point you want to open");
             y = Integer.parseInt(sc.nextLine());
         
-            System.out.println("hello world1");*/
+            System.out.println("hello world1");
             
-            int x , y;  
+            /*int x , y;  
             System.out.print("Enter the x coordinate of the point you want to open");
             x = Integer.parseInt(reader.readLine());
             System.out.print("Enter the y coordinate of the point you want to open");
-            y = Integer.parseInt(reader.readLine());
+            y = Integer.parseInt(reader.readLine());*/
 
             
             //did they hit a mine?
@@ -375,7 +375,7 @@ class hi{
                 }
             }
         }
-        //sc.close();
+        sc.close();
         if(gameOverWin){
             System.out.println("You Won!!");
         }
